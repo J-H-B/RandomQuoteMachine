@@ -14,9 +14,10 @@ code {
     monospace;
 }
 
-.card{
-  margin-top: 40vh;
-  width: 70%;
+#quote-box {
+  width: 75%;
+  max-height: 500px;
+  margin: calc(60vh / 2) auto; 
 }
 
 .mb-0{
@@ -29,7 +30,7 @@ a{
 }
 
 i{
-  font-size: 3.25em;
+  font-size: 3.22em;
   color: coral;
 }
 
@@ -37,8 +38,11 @@ i:hover{
   color: rgb(240, 113, 68);
 }
 
+#tweet_quote{
+  margin-left: 0.5rem;
+}
+
 #tumblr{
-  margin-right: 23rem;
   margin-left: 0.5rem;
 }
 
@@ -46,9 +50,28 @@ i:hover{
   background-color: coral;
   color: white;
   padding: 0 8px;
+  margin-left: 10rem; 
 }
 
 .btn:hover{
   color: white;
   background-color: rgb(240, 113, 68);
+}
+
+@media (min-width: 760px) and (max-width: 850px ){
+  .btn{
+    margin-left: 15rem; 
+  }
+ }
+
+@media (min-width: 851px) and (max-width: 950px){
+  .btn{
+    margin-left: 20rem; 
+  }
+}
+
+@media (min-width: 951px) {
+  .btn{
+    margin-left: 35rem;
+  }
 }
